@@ -1,0 +1,28 @@
+body{
+  background-color: #112031;
+}
+
+#__next{
+  height: 98vh;
+}
+
+.companyImg { 
+  filter: grayscale(100%); 
+  transition: .2s;
+}
+
+.companyImg:hover{
+  filter: grayscale(0%);
+}
+
+.linkImage{
+  border-radius: 100%;
+  width: 3em;
+  margin: 0 .5em;
+}
+
+.linkImage:hover{
+  width: 3.5em;
+  transition: .2s;
+  cursor: pointer;
+}
