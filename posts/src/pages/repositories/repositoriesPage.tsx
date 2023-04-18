@@ -1,6 +1,7 @@
 import { GetServerSideProps } from "next";
 import Head from "next/head"
 import { Card, CardContent, CardHeader, Typography, Link, Grid, Box } from "@mui/material";
+import BackButton from "@/Components/BackButton";
 
 interface IRepository {
     name: string;
@@ -19,9 +20,9 @@ export default function Post(props: IProps) {
                 <title>Repositórios</title>
             </Head>
 
-            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', margin: 4 }}>
+            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', margin: 4, padding: '0em 0em 1em 0em' }}>
                 <Typography sx={{color: '#fff', fontWeight: 'bold', backgroundColor: '#345B63', padding: 1.5, borderRadius: '1em'}}>Repositórios</Typography>
-                <Grid container spacing={1} columns={2} sx={{ justifyContent: 'center', width: "90%", backgroundColor: '#dddddd', marginTop: 2, padding: 2, borderRadius: '1em' }}>
+                <Grid container spacing={1} columns={2} sx={{ justifyContent: 'center', width: "90%", backgroundColor: '#dddddd', marginTop: 2, padding: 2, borderRadius: '1em', marginBottom: '1em' }}>
                     {
                         props.repositories.map((item: IRepository) => {
                             return <Grid key={item.name} item sx={{ width: 1 / 2, padding: 2, marginTop: 2 }}>
@@ -38,6 +39,7 @@ export default function Post(props: IProps) {
                         })
                     }
                 </Grid>
+                <BackButton></BackButton>
             </Box>
         </div >
     )
