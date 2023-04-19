@@ -3,6 +3,7 @@ import { Box, Typography, ImageList } from '@mui/material';
 import CenteredBox from '@/Components/CenteredBox';
 import { experiencias } from '../Infos/experiencias';
 import Footer from '@/Components/Footer';
+import Image from 'next/image';
 
 export default function Home() {
 
@@ -18,12 +19,12 @@ export default function Home() {
             <br /> Atuo profissionalmente como desenvolvedor desde 2019 e meu objetivo desde então é me desenvolver como FullStack.
           </Typography>
         </div>
-        <img src="https://media.licdn.com/dms/image/D4D03AQHCsgMN_oAJnw/profile-displayphoto-shrink_800_800/0/1675084570890?e=1687392000&v=beta&t=Bs5GX0ENtch-QDlYQs9rqJQ0rxwu0U-0l-UAxqnCGCw"
+        <Image src="https://media.licdn.com/dms/image/D4D03AQHCsgMN_oAJnw/profile-displayphoto-shrink_800_800/0/1675084570890?e=1687392000&v=beta&t=Bs5GX0ENtch-QDlYQs9rqJQ0rxwu0U-0l-UAxqnCGCw"
           alt="" style={{ height: '20em', padding: '1em' }} />
       </CenteredBox>
 
       <CenteredBox direction='row'>
-        <img src="https://f.i.uol.com.br/fotografia/2019/01/09/15470616385c3649868d713_1547061638_3x2_md.jpg" alt="Mackenzie" style={{ height: '20em', padding: '1em' }} />
+        <Image src="https://f.i.uol.com.br/fotografia/2019/01/09/15470616385c3649868d713_1547061638_3x2_md.jpg" alt="Mackenzie" style={{ height: '20em', padding: '1em' }} />
         <div>
           <h1 style={{ marginLeft: '5em', fontWeight: 'bold', color: '#fff' }}>Um pouco sobre a minha história</h1>
           <Typography sx={{ marginLeft: '5em', fontWeight: 'bold', color: '#fff' }}>
@@ -54,7 +55,7 @@ export default function Home() {
           {experiencias.map(exp =>
             <Link key={exp.name} href={`/empresas/${exp.name}`}>
               <ImageList sx={{ height: 1, overflow: 'hidden', width: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <img className='companyImg' src={`${exp.imagem}`} alt="Logo" loading='lazy' style={{ height: '100%', width: '100%' }} />
+                <Image className='companyImage' src={`${exp.imagem}`} alt="Logo" loading='lazy' style={{ height: '100%', width: '100%' }} />
               </ImageList>
             </Link>)
           }

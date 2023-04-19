@@ -6,12 +6,12 @@ body{
   height: 98vh;
 }
 
-.companyImg { 
+.companyImage { 
   filter: grayscale(100%); 
   transition: .2s;
 }
 
-.companyImg:hover{
+.companyImage:hover{
   filter: grayscale(0%);
 }
 

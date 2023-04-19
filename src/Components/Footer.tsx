@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import linkedin from '../Assets/ImagensEmpresas/linkedin.png';
 import github from '../Assets/ImagensEmpresas/github.png';
+import Image from 'next/image';
 
 export default function Footer() {
     return (
@@ -10,10 +11,10 @@ export default function Footer() {
                 <h2>Hotmail: victormdsp@hotmail.com</h2>
             </div>
             <a href="https://www.linkedin.com/in/victor-martini-domingues-5b6986161/">
-                <img className="linkImage" src={linkedin.src} alt="Linkedin" />
+                <Image className="linkImage" src={linkedin.src} alt="Linkedin" />
             </a>
             <a href="https://github.com/victormdsp">
-                <img className="linkImage" src={github.src} alt="Github" />
+                <Image className="linkImage" src={github.src} alt="Github" />
             </a>
         </Box>
     )

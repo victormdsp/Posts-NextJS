@@ -5,7 +5,7 @@ export default function ZeroCarbon() {
         <CompanyBox title="ZeroCarbon">
             Em junho de 2022 eu entrei para a ZeroCarbon, uma das 3 empresas do grupo Enacom, nesta empresa
             <br />eu atuei na parte da criação, manutenção e desenvolvimento das novas features do site da empresa.
-            <br />Por ser uma empresa de e-commerce acabei por fazer muitas integrações com API's, desenvolvi melhoras
+            <br />Por ser uma empresa de e-commerce acabei por fazer muitas integrações com APIs, desenvolvi melhoras
             <br />no UX, integração com Instagram e desenvolvimento e otimização do site.
             <br />Minhas tarefas na empresa eram de:
             <ul>
